@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_DhBWsBJYEeKF5NGSNxoNpg" elementId="org.eclipse.e4.ide.application" bindingContexts="_DhBWsRJYEeKF5NGSNxoNpg">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_DhB9wBJYEeKF5NGSNxoNpg" label="e4.rcp.filebrowser" width="500" height="400">
+    <children xsi:type="advanced:PerspectiveStack" xmi:id="_DhB9yBJYEeKF5NGSNxoNpg">
+      <children xsi:type="advanced:Perspective" xmi:id="_DhB9yRJYEeKF5NGSNxoNpg">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_DhB9yhJYEeKF5NGSNxoNpg">
+          <children xsi:type="basic:PartStack" xmi:id="_DhB9yxJYEeKF5NGSNxoNpg">
+            <children xsi:type="basic:Part" xmi:id="_yHZjABJYEeKF5NGSNxoNpg" elementId="e4.rcp.filebrowser.part" contributionURI="bundleclass://e4.rcp.filebrowser/e4.rcp.filebrowser.parts.TreeViewerPart"/>
+          </children>
+        </children>
+      </children>
+    </children>
+    <mainMenu xmi:id="_DhB9wRJYEeKF5NGSNxoNpg" elementId="menu:org.eclipse.ui.main.menu">
+      <children xsi:type="menu:Menu" xmi:id="_DhB9whJYEeKF5NGSNxoNpg" label="File">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_DhB9wxJYEeKF5NGSNxoNpg" label="Open" iconURI="platform:/plugin/e4.rcp.filebrowser/icons/sample.gif" command="_DhBWvhJYEeKF5NGSNxoNpg"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_DhB9xBJYEeKF5NGSNxoNpg" label="Save" iconURI="platform:/plugin/e4.rcp.filebrowser/icons/save_edit.gif" command="_DhBWwRJYEeKF5NGSNxoNpg"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_DhB9xRJYEeKF5NGSNxoNpg" label="Quit" command="_DhBWuhJYEeKF5NGSNxoNpg"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_DhB9xhJYEeKF5NGSNxoNpg" label="Help">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_DhB9xxJYEeKF5NGSNxoNpg" label="About" command="_DhBWxBJYEeKF5NGSNxoNpg"/>
+      </children>
+    </mainMenu>
+    <trimBars xmi:id="_DhB9zBJYEeKF5NGSNxoNpg">
+      <children xsi:type="menu:ToolBar" xmi:id="_DhB9zRJYEeKF5NGSNxoNpg" elementId="toolbar:org.eclipse.ui.main.toolbar">
+        <children xsi:type="menu:HandledToolItem" xmi:id="_DhB9zhJYEeKF5NGSNxoNpg" iconURI="platform:/plugin/e4.rcp.filebrowser/icons/sample.gif" command="_DhBWvhJYEeKF5NGSNxoNpg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_DhB9zxJYEeKF5NGSNxoNpg" iconURI="platform:/plugin/e4.rcp.filebrowser/icons/save_edit.gif" command="_DhBWwRJYEeKF5NGSNxoNpg"/>
+      </children>
+    </trimBars>
+  </children>
+  <handlers xmi:id="_DhBWuxJYEeKF5NGSNxoNpg" contributionURI="bundleclass://e4.rcp.filebrowser/e4.rcp.filebrowser.handlers.QuitHandler" command="_DhBWuhJYEeKF5NGSNxoNpg"/>
+  <handlers xmi:id="_DhBWvxJYEeKF5NGSNxoNpg" contributionURI="bundleclass://e4.rcp.filebrowser/e4.rcp.filebrowser.handlers.OpenHandler" command="_DhBWvhJYEeKF5NGSNxoNpg"/>
+  <handlers xmi:id="_DhBWwhJYEeKF5NGSNxoNpg" contributionURI="bundleclass://e4.rcp.filebrowser/e4.rcp.filebrowser.handlers.SaveHandler" command="_DhBWwRJYEeKF5NGSNxoNpg"/>
+  <handlers xmi:id="_DhBWxRJYEeKF5NGSNxoNpg" contributionURI="bundleclass://e4.rcp.filebrowser/e4.rcp.filebrowser.handlers.AboutHandler" command="_DhBWxBJYEeKF5NGSNxoNpg"/>
+  <bindingTables xmi:id="_DhBWvBJYEeKF5NGSNxoNpg" bindingContext="_DhBWsRJYEeKF5NGSNxoNpg">
+    <bindings xmi:id="_DhBWvRJYEeKF5NGSNxoNpg" keySequence="M1+Q" command="_DhBWuhJYEeKF5NGSNxoNpg"/>
+    <bindings xmi:id="_DhBWwBJYEeKF5NGSNxoNpg" keySequence="M1+O" command="_DhBWvhJYEeKF5NGSNxoNpg"/>
+    <bindings xmi:id="_DhBWwxJYEeKF5NGSNxoNpg" keySequence="M1+S" command="_DhBWwRJYEeKF5NGSNxoNpg"/>
+    <bindings xmi:id="_DhBWxhJYEeKF5NGSNxoNpg" keySequence="M1+A" command="_DhBWxBJYEeKF5NGSNxoNpg"/>
+  </bindingTables>
+  <rootContext xmi:id="_DhBWsRJYEeKF5NGSNxoNpg" elementId="org.eclipse.ui.contexts.dialogAndWindow" name="In Dialog and Windows">
+    <children xmi:id="_DhBWshJYEeKF5NGSNxoNpg" elementId="org.eclipse.ui.contexts.window" name="In Windows"/>
+    <children xmi:id="_DhBWsxJYEeKF5NGSNxoNpg" elementId="org.eclipse.ui.contexts.dialog" name="In Dialogs"/>
+  </rootContext>
+  <commands xmi:id="_DhBWuhJYEeKF5NGSNxoNpg" elementId="org.eclipse.ui.file.exit" commandName="quitCommand"/>
+  <commands xmi:id="_DhBWvhJYEeKF5NGSNxoNpg" elementId="e4.rcp.filebrowser.open" commandName="openCommand"/>
+  <commands xmi:id="_DhBWwRJYEeKF5NGSNxoNpg" elementId="org.eclipse.ui.file.save" commandName="saveCommand"/>
+  <commands xmi:id="_DhBWxBJYEeKF5NGSNxoNpg" elementId="org.eclipse.ui.help.aboutAction" commandName="aboutCommand"/>
+  <addons xmi:id="_DhBWtBJYEeKF5NGSNxoNpg" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
+  <addons xmi:id="_DhBWtRJYEeKF5NGSNxoNpg" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
+  <addons xmi:id="_DhBWthJYEeKF5NGSNxoNpg" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
+  <addons xmi:id="_DhBWtxJYEeKF5NGSNxoNpg" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
+  <addons xmi:id="_DhBWuBJYEeKF5NGSNxoNpg" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
+  <addons xmi:id="_DhBWuRJYEeKF5NGSNxoNpg" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
+</application:Application>
